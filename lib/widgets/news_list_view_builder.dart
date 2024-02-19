@@ -16,6 +16,12 @@ class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
   @override
   void initState() {
     super.initState();
+    ///This method doesn't need to be written 
+    ///with async and await in this context because you're not awaiting 
+    ///it directly in the initState. Instead, you're passing the future 
+    ///to the FutureBuilder, which handles waiting for the future to complete.
+
+
     future = NewsService().getTopHeadlinesNews(category: widget.category); 
   }
   @override
