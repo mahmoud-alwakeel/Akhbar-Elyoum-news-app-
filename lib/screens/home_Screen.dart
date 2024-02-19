@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/widgets/categories_cards_lst_view.dart';
 import 'package:news_app/widgets/news_card_list_view.dart';
+import 'package:news_app/widgets/news_list_view_builder.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -30,11 +31,13 @@ class HomeScreen extends StatelessWidget {
           child: CustomScrollView(
             slivers: [
               SliverToBoxAdapter(child: CategoriesCardListView()),
-              SliverToBoxAdapter(child: SizedBox()),
-              NewsCardListView(),
+              SliverToBoxAdapter(child: SizedBox(height: 20,)),
+              NewsListViewBuilder(),
             ],
           ),
         )
         );
   }
 }
+
+

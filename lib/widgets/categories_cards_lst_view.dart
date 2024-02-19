@@ -6,12 +6,12 @@ class CategoriesCardListView extends StatelessWidget {
   const CategoriesCardListView({super.key});
 
   final List<CategoryModel> categoryList = const [
+    CategoryModel(title: 'general', image: 'assets/general.avif'),
     CategoryModel(title: 'Sports', image: 'assets/sports.avif'),
-    CategoryModel(title: 'Sports', image: 'assets/business.avif'),
-    CategoryModel(title: 'Sports', image: 'assets/entertaiment.avif'),
-    CategoryModel(title: 'Sports', image: 'assets/general.avif'),
-    CategoryModel(title: 'Sports', image: 'assets/science.avif'),
-    CategoryModel(title: 'Sports', image: 'assets/technology.jpeg'),
+    CategoryModel(title: 'business', image: 'assets/business.avif'),
+    CategoryModel(title: 'entertaiment', image: 'assets/entertaiment.avif'),
+    CategoryModel(title: 'science', image: 'assets/science.avif'),
+    CategoryModel(title: 'technology', image: 'assets/technology.jpeg'),
   ];
 
   @override

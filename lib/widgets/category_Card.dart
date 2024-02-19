@@ -8,14 +8,14 @@ class CtaegoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 12),
+      margin: const EdgeInsets.only(right : 12),
       width: 200,
       height: 130,
       alignment: Alignment.center,
       decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.fill, image: AssetImage(categoryModel.image)),
-          color: Colors.amber,
+          color: Colors.grey,
           borderRadius: BorderRadius.circular(12)),
       child: Text(
         categoryModel.title,
