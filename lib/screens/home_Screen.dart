@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             slivers: [
               SliverToBoxAdapter(child: CategoriesCardListView()),
               SliverToBoxAdapter(child: SizedBox(height: 20,)),
-              NewsListViewBuilder(),
+              NewsListViewBuilder(category: 'general',),
             ],
           ),
         )

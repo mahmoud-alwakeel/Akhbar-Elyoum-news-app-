@@ -6,12 +6,12 @@ class CategoriesCardListView extends StatelessWidget {
   const CategoriesCardListView({super.key});
 
   final List<CategoryModel> categoryList = const [
-    CategoryModel(title: 'general', image: 'assets/general.avif'),
     CategoryModel(title: 'Sports', image: 'assets/sports.avif'),
-    CategoryModel(title: 'business', image: 'assets/business.avif'),
-    CategoryModel(title: 'entertaiment', image: 'assets/entertaiment.avif'),
+    CategoryModel(title: 'Business', image: 'assets/business.avif'),
+    CategoryModel(title: 'Entertainment', image: 'assets/entertaiment.avif'),
     CategoryModel(title: 'science', image: 'assets/science.avif'),
     CategoryModel(title: 'technology', image: 'assets/technology.jpeg'),
+    CategoryModel(title: 'general', image: 'assets/general.avif'),
   ];
 
   @override
@@ -22,7 +22,7 @@ class CategoriesCardListView extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: categoryList.length,
             itemBuilder: (context, index) {
-            return  CtaegoryCard(categoryModel: categoryList[index]);
+            return  CategoryCard(categoryModel: categoryList[index]);
           }),
         );
   }
